@@ -21,3 +21,30 @@ twoDecimalPlaces;
 let myNumber = "74";
 myNumber = Number(myNumber) + 3;
 alert(myNumber)
+
+
+let b = 50; let r = 50;
+
+// Edit the two lines below here ONLY
+b = 43 + 7 ;
+r = 25 * 3;
+
+ctx.fillStyle = 'green';
+ctx.fillRect(10, 10, b, r);
+
+const btn = document.querySelector("button");
+const txt = document.querySelector("p");
+
+btn.addEventListener("click", updateBtn);
+
+function updateBtn() {
+  if (btn.textContent === "Start machine") {
+    btn.textContent = "Stop machine";
+    txt.textContent = "The machine has started!";
+  } else {
+    btn.textContent = "Start machine";
+    txt.textContent = "The machine is stopped.";
+  }
+}
+
+    
