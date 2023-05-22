@@ -31,6 +31,7 @@ r = 25 * 3;
 
 ctx.fillStyle = 'green';
 ctx.fillRect(10, 10, b, r);
+alert(b,r);
 
 const btn = document.querySelector("button");
 const txt = document.querySelector("p");
